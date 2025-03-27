@@ -2,39 +2,45 @@
 ## A Step-by-Step Guide
 ---
 
-### Author Links
+# Docker
 
-👋 Hello, I'm Dave Gray.
+Think of Docker as a tool that helps package up software and everything it needs to run, like libraries and settings, into a neat little box called a "container". This container can then be easily moved around and run on different computers, making it simpler for developers to build, share, and run their applications consistently across various environments. 
 
-📚 [My Courses](https://courses.davegray.codes/)
+## Download Docker Desktop
 
-✅ [Check out my YouTube Channel with hundreds of tutorials](https://www.youtube.com/DaveGrayTeachesCode).
+[https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
 
-🚩 [Subscribe to my channel](https://bit.ly/3nGHmNn)
+## Terminal commands:
 
-💖 [Support My Content](https://patreon.com/davegray)
+### build image: 
+docker build -t image-name .
 
-🚀 Follow Me:
+### list images: 
+docker image ls
 
-- [Twitter](https://twitter.com/yesdavidgray)
-- [LinkedIn](https://www.linkedin.com/in/davidagray/)
-- [Blog](https://davegray.codes)
+### run image: 
+docker-compose up 
 
----
+### run image in background: 
+docker-compose up -d 
 
-### Description
+# remove image 
+docker image rm image-name
 
-📺 [YouTube Video](https://youtu.be/NL23_cVq6XI) for this repository.
+### explore running container: 
+docker exec -it container-name bash 
 
----
+### restart container: 
+docker restart container-name 
 
-### 🎓 Academic Honesty
+### remove container: 
+docker rm container-name 
 
-**DO NOT COPY FOR AN ASSIGNMENT** - Avoid plagiarism and adhere to the spirit of this [Academic Honesty Policy](https://www.freecodecamp.org/news/academic-honesty-policy/).
+### remove all stopped containers including "none" containers: 
+docker system prune
 
----
 
-### 📚 Tutorial References
+### 📚  References
 
 - 🔗 [Docker Hub PHP](https://hub.docker.com/_/php)
 - 🔗 [Render.com](https://render.com/)
